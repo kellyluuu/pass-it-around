@@ -5,10 +5,7 @@ app.listen(3000,()=>{
     console.log('pass-it-around open on port 3000')
 })
 
-
-
 app.get("/",(req,res)=>{
-    console.log(randomAmt)
     res.send(`<html>
     <body>
         <h1>99 little bugs in the code</h1>
@@ -16,8 +13,6 @@ app.get("/",(req,res)=>{
     </body>
 </html>`)
 })
-
-
 
 app.get("/:number_of_bottles",(req,res)=>{
     const randomAmt = Math.floor(Math.random() * 10)
@@ -47,11 +42,3 @@ app.get("/:number_of_bottles",(req,res)=>{
         </body>
     </html>`)  
 }})
-
-// var d = Math.random();
-// if (d < 0.5)
-//     // 50% chance of being here
-// else if (d < 0.7)
-//     // 20% chance of being here
-// else
-//     // 30% chance of being here
