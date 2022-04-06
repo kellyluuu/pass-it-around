@@ -31,7 +31,7 @@ app.get("/:number_of_bottles",(req,res)=>{
         res.send(`<html>
         <body>
             <h1>${currentQty} little bugs in the code</h1>
-            <a href="/${randomAdd}">Oh no! Found More bugs!</a>
+            <a href="/${randomAdd}">Oh no! Found ${randomAmt} More bugs!</a>
         </body>
     </html>`)  
     }else{
